@@ -11,7 +11,7 @@ In C++ exists four types of casting
 
 ## Static casting
 
-**static_cast<new-type>(expression)** -- returns a value of type `new-type`. 
+**static_cast<`new-type`>(expression)** -- returns a value of type `new-type`. 
 
 For example we can conver char to int:
 
@@ -39,7 +39,7 @@ int main()
 
 ## Const casting
 
-**const_cast<new-type>(expression)** -- converts between types with different cv-qualification. Returns a value of type new-type
+**const_cast<`new-type`>(expression)** -- converts between types with different cv-qualification. Returns a value of type new-type
 
 For example we want convert const expression to non-const:
 
@@ -81,7 +81,7 @@ Be carefull! Modifying casted expression throw an error!
 
 ## Dynamic casting
 
-Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+**dynamic_cast<`new-type`>(expression)** returns a value of tyep new_type. Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
 
 For example we want to get child instance from base class pointer:
 
